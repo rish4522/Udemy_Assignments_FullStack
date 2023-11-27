@@ -10,3 +10,19 @@ $("button").html("Manipulating Text");
 console.log($("img").attr("src"));
 $("img").attr("src", "https://i.pinimg.com/originals/dd/97/3a/dd973ac116a977c8dd5296b0da504b8c.jpg");
 
+$("h1").click(function() {
+    $("h1").css("color", "blue");
+});
+
+$("img").click(function() {
+    $("h1").css("color", "#f7e98e");
+    $("h1").text("Hare Krishna!");
+});
+
+// Challenge
+$("input").keypress(function(Event) {
+    $("h1").text(Event.key);
+});
+
+// Can use ".on" instead of ".keypress" or ".click".
+
