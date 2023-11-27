@@ -26,3 +26,21 @@ $("input").keypress(function(Event) {
 
 // Can use ".on" instead of ".keypress" or ".click".
 
+// Animations
+
+$("button.First").on("click", function() {
+    $("h1").append("<button>Created using event listener</button>");
+});
+
+$("button.Second").on("click", function() {
+    $("h1").fadeOut();
+});
+
+$("button.Third").on("click", function() {
+    $("h1").slideDown();
+});
+
+$("button.Fourth").on("click", function() {
+    $("h1").fadeOut().fadeIn().animate({opacity : 0.5});
+});
+
